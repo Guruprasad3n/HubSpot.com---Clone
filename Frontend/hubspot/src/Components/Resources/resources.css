@@ -1,0 +1,411 @@
+/* background-Color--eaf0f6 */
+/* color--#2e475d */
+/* Heading-Background-Color--#ff5c35 */
+/* Heading-Color--#fff */
+
+.mainContainer{
+    box-sizing: border-box;
+    padding: 0px 120px;
+    margin-top: 10px;
+}
+.topResource{
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+
+}
+.flexDiv1{
+    /* border: 1px solid red; */
+    width: 68%;
+    background-color: #eaf0f6;
+    border-radius: 2px;
+}
+.flexDiv1:hover{
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 36px 0px, rgba(0, 0, 0, 0.0) 0px 0px 0px 1px;
+
+    transition: .3s;
+}
+.flexDiv2{
+    width:30%;
+}
+.resourceTopImage{
+    width: 100%;
+}
+.ResourceTopHeading{
+    font-size: 31px;
+    margin-top: 10px;
+    margin-left: 15px;
+    line-height: 40px;
+    width: 70%;
+    font-weight: 500;
+    color: #2e475d;
+}
+.ResourceTopSubHeading{
+    margin-left: 15px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 15px;
+    /* margin-bottom: 10px; */
+    color: #2e475d;
+}
+.ResourceTopSubHeadingUnderLine:hover{
+    border-bottom: 2px solid #2e475d;
+   
+}
+
+/* Flex Div - 2 */
+
+.flexDiv2SideHeading{
+    background-color:#ff5c35 ;
+    width: 75%;
+    /* height: 25px; */
+
+}
+.flexDiv2SideHeadingText{
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+    margin-bottom: 13px;
+}
+.flexRightTextDivs{
+    background-color: #eaf0f6;
+    padding: 10px 0px;
+    padding-inline: 5% 10%;
+    writing-mode: horizontal-tb;
+    margin-bottom: 13px;
+    width: 100%;
+    border-radius: 3px;
+}
+.flexRightTextDivs:hover{
+    /* width: 68.5%; */
+    /* width: 101%;
+    height: 90px; */
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 10px 36px 0px, rgba(0, 0, 0, 0.0) 0px 0px 0px 1px;
+    transition: .3s;
+    border-radius: 3px;
+}
+.lexRightTextDivs1{
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+.lexRightTextDivs2{
+    font-size: 13px;
+    font-weight: 500;
+}
+.lexRightTextDivsType:hover{
+    border-bottom: 2px solid #2e475d;
+    /* text-decoration: underline; */
+}
+
+
+
+
+
+
+/* ///////////////// Second part Flex ///////////////// */
+
+.SecondContainer{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .stepsToCreate{
+
+}
+.stepsToCreateDiv{
+    display: flex;
+  
+    justify-content: space-evenly;
+    width: 88%;
+}
+.topStepImag1{
+    width: 100%;
+}
+.TextSteps{
+    background-color: aqua;
+    padding: 10px 25px;
+}
+.step2Create{
+    font-size: 32px;
+    font-weight: 500;
+    width: 80%;
+
+}
+.step2Create1{
+   
+    margin-top: 25px;
+    font-weight: 500;
+   
+}
+.topStepImag{
+    border: 1px solid red;
+    width: 70%;
+}
+.rightSideStepsToCreate{
+    width: 25%;
+   
+}
+
+
+.mostpopularHeading{
+    background-color: tomato;
+    width: 80%;
+    margin-bottom: 12px;
+    padding-inline: 5% 10%;
+writing-mode: horizontal-tb;
+}
+.textHeading{
+   
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+
+    
+}
+.nostPopularText{
+    width: 100%;
+    background-color: rgb(178, 217, 235);
+    padding-inline: 5% 10%;
+    writing-mode: horizontal-tb;
+    font-size: 15px;
+} */
