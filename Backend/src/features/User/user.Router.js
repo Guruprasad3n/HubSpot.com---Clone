@@ -70,9 +70,7 @@ app.post("/signup",async(req,res)=>{
   }
 })
 app.get("/:id",Authmiddleware,async(req,res)=>{
-  let token=req.headers.token;
- 
-  let id=req.params.id
+   let id=req.params.id
 try{
     let user =await User.findById(id);
     res.send(user)
