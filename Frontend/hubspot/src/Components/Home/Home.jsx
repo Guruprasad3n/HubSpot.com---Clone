@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div style={{ height: '100vh', backgroundColor: 'red' }}>Home</div>
   )
 }
 
