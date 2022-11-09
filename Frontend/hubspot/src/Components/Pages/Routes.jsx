@@ -1,9 +1,17 @@
 import React from 'react'
 
-function Routes() {
+import Pricing from '../Pricing/Pricing' 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+function ALLRoutes() {
   return (
-    <div>Routes</div>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/pricing" element = {<Pricing/>}></Route>
+        </Routes>
+     </Router>
+    </div>
   )
 }
 
-export default Routes
+export default ALLRoutes
