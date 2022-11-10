@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react'
 import reportWebVitals from './reportWebVitals';
+fp03_323_Day-3
 
 
 
@@ -13,6 +14,19 @@ root.render(
     <ChakraProvider>
     <App />
     </ChakraProvider>
+
+import { ChakraProvider } from '@chakra-ui/react';
+import { Provider } from 'react-redux';
+import { store } from './Components/redux/store';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+    <ChakraProvider>
+    <App />
+    </ChakraProvider>
+    </Provider>
+main
   </React.StrictMode>
 );
 
