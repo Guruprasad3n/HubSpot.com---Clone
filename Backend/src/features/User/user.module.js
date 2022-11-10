@@ -15,6 +15,14 @@ const userSchema = new mongoose.Schema({
         type:String,
         require:true,
     },
+    Companyname:{
+        type:String,
+       
+    },
+   Websitename:{
+        type:String,
+       
+    },
    
 },{
     versionKey:false,

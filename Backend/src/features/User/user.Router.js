@@ -34,6 +34,12 @@ app.post("/login",async(req,res)=>{
        if(password===user.password){
         res.send({
           token: `${email}_#_${password}`,
+          userdetail:{
+            email:user.email,
+            name:user.name,
+            Companyname:user.Companyname,
+            Websitename:user.Websitename
+          }
         })
        }else{
         res.send(401).send("Authentication Failure, incorrect password")
@@ -49,7 +55,7 @@ app.post("/login",async(req,res)=>{
 
 })
 app.post("/signup",async(req,res)=>{
-  const {email,password,name}=req.body;
+  const {email,password,name,Companyname,Websitename}=req.body;
   try{
    let existingUser=await User.findOne({email});
    if(existingUser){
@@ -59,6 +65,8 @@ app.post("/signup",async(req,res)=>{
     email,
     password,
     name,
+    Companyname,
+    Websitename,
    });
     
    res.send({
