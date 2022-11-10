@@ -1,3 +1,10 @@
+ fp_03_008_Day_2
+import ALLRoutes from "./Components/Pages/Routes";
+function App() {
+  return (
+    <div>
+      <ALLRoutes/>
+
  fp03_323_Day-3
 import './App.css';
 import Resources from './Components/Resources/Resources';
@@ -15,6 +22,7 @@ function App() {
     <div>
    <Login/>
  main
+
     </div>
   );
 }
