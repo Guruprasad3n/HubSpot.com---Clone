@@ -2,14 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { ChakraProvider } from '@chakra-ui/react'
 import reportWebVitals from './reportWebVitals';
+fp03_323_Day-3
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
+    <ChakraProvider>
     <App />
-   
+    </ChakraProvider>
+
+import { ChakraProvider } from '@chakra-ui/react';
+import { Provider } from 'react-redux';
+import { store } from './Components/redux/store';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Provider store={store}>
+    <ChakraProvider>
+    <App />
+    </ChakraProvider>
+    </Provider>
+main
   </React.StrictMode>
 );
 
