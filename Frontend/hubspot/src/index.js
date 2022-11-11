@@ -2,32 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { ChakraProvider } from '@chakra-ui/react'
 import reportWebVitals from './reportWebVitals';
-fp03_323_Day-3
-
-
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <ChakraProvider>
-    <App />
-    </ChakraProvider>
-
 import { ChakraProvider } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
 import { store } from './Components/redux/store';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <ChakraProvider>
     <Provider store={store}>
-    <ChakraProvider>
-    <App />
-    </ChakraProvider>
+      <App />
     </Provider>
-main
-  </React.StrictMode>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
