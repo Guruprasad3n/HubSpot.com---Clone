@@ -315,6 +315,242 @@ background-color: #eaf0f6;
         background: #eaf0f6;
         margin-bottom: 50px;
 }
+/* 
+.mainAnchorDiv{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.anchorDi{
+    background-color: #eaf0f6;
+    display: inline-block;
+    padding: 10px 50px;
+    border-left: 5px solid red;
+    border-radius: 3px;
+   
+}
+.divAnchor{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+} */
+
+
+
+ .rightArroe{
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0.76rem;
+    left: 15rem;
+    font-weight: 900;
+    background-image: url(//cdn2.hubspot.net/hubfs/53/assets/hubspot.com/style-guide/modules/forms/rightArrow.svg);
+    bottom: 1rem;
+    width: 1.5rem;
+  
+}
+.mainExploreContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 30px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.ExploreTopics{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, auto);
+   margin: auto;
+   
+}
+
+.anchorDivs{
+    background-color:#eaf0f6;
+    font-size:16px;
+    position:relative; 
+    padding:15px 55px;
+     border-radius:3px;
+    display:inline-block;
+    width:300px;
+    border-left:5px solid red;
+    font-weight:500;
+}
+.anchorDiv1{
+    margin-left: -35px;
+} 
+/* .ExploreTopics{
+    display: flex;
+    justify-content: space-between; */
+/* } */
+
+
+.sixthPartOfDiv{
+    margin-bottom: 15px;
+}
+.sixthDivHeadingImage{
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.sixthDivHeading{
+text-align: center;
+color:#2e475d;
+font-weight: 500;
+font-size: 33px;
+margin-bottom: 25px;
+}
+.marktingSalesDivsSixthDiv{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    
+}
+
+.insideGridDivs1{
+    background-color: #ff5c35;
+    border-radius: 3px;
+}
+
+.insideGridDivs{
+    background-color: #ff5c35;
+    border-radius: 3px;
+}
+.insideGridDivs1:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: .3s;
+}
+
+.sixthDivimageDivClas{
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+width: 100%;
+}
+
+
+
+.insideGridDivsHeading{
+    color: #fff;
+    font-size: 27px;
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.insideGridDivsPara{
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.seventhPartDiv{
+    background-color: #ff5c35;
+    margin-bottom: 60px;
+    border-radius: 3px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 60px 40px;
+}
+.insideseventhPartDiv{
+    display: flex;
+    justify-content: space-around;
+}
+.SubscribeLeftDic{
+    width: 40%;
+}
+.SubscribeRightDic{
+    width: 60%;
+}
+.headingSubs{
+    font-size: 33px;
+    font-weight: 700;
+    width: 70%;
+    margin-bottom: 15px;
+}
+.headingPara{
+    width: 70%;
+    font-weight: 400;
+    font-size: 17px;
+}
+.SubscribeRightDivhead{
+    font-size: 18px;
+    font-weight: 500;
+}
+.EmaininpurAndButton{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.inputSubs{
+width: 60%;
+}
+.inputSubs>p{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.inputSubs>input{
+    width: 90%;
+    border-radius: 3px;
+    color: black;
+    box-sizing: border-box;
+    padding: 0px 10px;
+}
+.buttonSubs{
+    width: 40%;
+}
+.buttonSubs>button{
+    color: #2e475d;
+    background-color: #fff;
+    padding: 10px 65px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.bottomText{
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:767px){
@@ -349,8 +585,7 @@ background-color: #eaf0f6;
 .rightSideSecongSubscribeEmail{
     width: 93%;
     margin: auto;
-    /* display: grid; */
-    /* grid-template-columns:1, 1fr; */
+  
 }
 .buttonSubscribe{
     margin-bottom: 15px;
@@ -377,24 +612,112 @@ background-color: #eaf0f6;
 .ResourceTopSubHeading3{
     margin-top: 30px;
 }
+.mainExploreContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    margin-left: -3rem;
+    column-gap: 15px;
+}
+.ExploreTopics{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(auto, auto);
+    margin: auto;
+    
+ }
+.anchorDivs{
+   width:250px;  
+}
+.rightArroe{
+    left: 12rem;
+}
+.sixthPartOfDiv{
+    width: 93%;
+    margin: auto;
+}
 
-
+.marktingSalesDivsSixthDiv{
+    display: grid;
+    grid-template-columns:  1fr;
+    gap: 15px;
+    
+}
+.seventhPartDiv{
+    display: none;
+}
 
 }
 
+@media screen and (max-width:550px){
+    .mainExploreContainer{
+        display: grid;
+        grid-template-columns:  1fr;
+        row-gap: 5px;} 
+        .ExploreTopics{
+            display: grid;
+            grid-template-columns: 1fr;
+         } 
+
+    }
 
 @media screen and (max-width:1024px){
     .mainContainer{
         box-sizing: border-box;
-        padding: 0px 0px;
-      
+        padding: 0px 0px;  
     }
+.ExploreTopics{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+     }
+     .mainExploreContainer{
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 20px;
+        padding: 10px 50px;
+    }
+
 }
+@media screen and (max-width:900px){
+    .mainExploreContainer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        padding: 10px 50px;
+    } 
+}
+
+@media screen and (max-width:450px){
+  .mainExploreContainer{
+        display: grid;
+        grid-template-columns:  1fr;
+       
+    }
+    .ExploreTopics{
+        display: grid;
+        grid-template-columns:  1fr;
+     } 
+    
+    }
+    
+
+
+
 @media screen and (max-width:360px){
 .flexDiv1{
     width: 94%;
     margin: auto;
 }
+
+.mainExploreContainer{
+    display: grid;
+    grid-template-columns:  1fr;
+   
+}
+.ExploreTopics{
+    display: grid;
+    grid-template-columns:  1fr;
+ } 
+
 }
 
 

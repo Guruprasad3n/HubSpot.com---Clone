@@ -1,6 +1,19 @@
 import React from "react";
 import "./resources.css";
 
+const ExploreTopics = [
+  { name: "Customer Retention", color: "red" },
+  { name: "Customer Experience" },
+  { name: "SEO" },
+  { name: "Instagram Marketing", color: "green" },
+  { name: "Email Newsletters" },
+  { name: "Email Marketing" },
+  { name: "Sales Qualification" },
+  { name: "Sales Process" },
+  { name: "Sales Prospecting" },
+  { name: "Remote Work" },
+];
+
 function Resources() {
   return (
     <div>
@@ -270,14 +283,9 @@ function Resources() {
         </div>
 
         {/* ///////////////////////   4the part Div   //////////////////// */}
-      
-
-
 
         <div className="thirdContainer">
           <div className="thirdConteinerInnerDiv">
-            
-
             <div className="thisrConteiner2">
               {/* style={{width:"100%"}} */}
               <img
@@ -288,62 +296,224 @@ function Resources() {
 
               <p className="thirdDivRightSideHoliday">Sales Strategy</p>
               <p className="ResourceTopHeading2">
-                How to Avoide a Summer Slump in Slaes
-                [Data + Tips]
+                How to Avoide a Summer Slump in Slaes [Data + Tips]
               </p>
               <p className="ResourceTopSubHeading">
                 {" "}
-                <span className="ResourceTopSubHeadingUnderLine">
-                  SALES | {" "}
-                </span> 
-                 7 MIN READ{" "}
+                <span className="ResourceTopSubHeadingUnderLine">SALES | </span>
+                7 MIN READ{" "}
               </p>
             </div>
 
-
-
             <div className="fourthDivrightSide">
-            
-            <img src="https://blog.hubspot.com/hubfs/sales-resolutions.jpg" alt="Sales Image" />
-            
-<p className="thirdDivRightSideHoliday">Sales Goals</p>
+              <img
+                src="https://blog.hubspot.com/hubfs/sales-resolutions.jpg"
+                alt="Sales Image"
+              />
 
-<p className="ResourceTopHeading2">What Sales Reps Should Do in the First Quarter of New Year, According to Experts</p>
+              <p className="thirdDivRightSideHoliday">Sales Goals</p>
 
-<p className="ResourceTopSubHeading3"> <span className="ResourceTopSubHeadingUnderLine">SALES |{" "}</span>3 MIN READ </p>
+              <p className="ResourceTopHeading2">
+                What Sales Reps Should Do in the First Quarter of New Year,
+                According to Experts
+              </p>
+
+              <p className="ResourceTopSubHeading3">
+                {" "}
+                <span className="ResourceTopSubHeadingUnderLine">SALES | </span>
+                3 MIN READ{" "}
+              </p>
             </div>
-
           </div>
         </div>
 
         {/* ///////////////////////   5the part Div   //////////////////// */}
 
+        <hr className="horizon" />
 
- <hr className="horizon"/>
+        <div>
+          <div>
+            <h1
+              style={{
+                textAlign: "center",
+                fontSize: "25px",
+                fontWeight: "500",
+              }}
+            >
+              Explore More Topics
+            </h1>
+            <p
+              style={{
+                textAlign: "center",
+                marginTop: "15px",
+                fontSize: "17px",
+                marginBottom: "45px",
+              }}
+            >
+              Ready to brush up on something new? We've got more to read right
+              this way
+            </p>
 
-<div>
+            <div className="mainExploreContainer">
+              {ExploreTopics.map((e) => (
+                <div className="ExploreTopics">
+                  <a className="anchorDivs" href="">
+                    <div className="anchorDiv1">
+                      {e.name}
+                      <span className="rightArroe"> </span>{" "}
+                    </div>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
 
-  
-  <div>
+        <hr className="horizon" />
 
-  <h1 style={{textAlign:"center", fontSize:"25px", fontWeight:"500"}}>Explore More Topics</h1>
-<p style={{textAlign:"center", marginTop:"15px", fontSize:"17px", marginBottom:"45px"}}>Ready to brush up on something new? We've got more to read right this way</p>
+        <div className="sixthPartOfDiv">
+          <div>
+            <img
+              className="sixthDivHeadingImage"
+              src="https://cdn2.hubspot.net/hubfs/53/assets/blog.hubspot.com/images/orange-circles.png"
+              alt=""
+            />
+            <p className="sixthDivHeading"> Visit the HubSpot Blogs </p>
+          </div>
 
+          <div className="marktingSalesDivsSixthDiv">
+            <div className="insideGridDivs">
+              <img
+                className="sixthDivimageDivClas"
+                src="https://blog.hubspot.com/hubfs/assets/blog.hubspot.com/2018/blogroll-images/marketing-blog-image.jpg"
+                alt=""
+              />
+              <p className="insideGridDivsHeading">Marketing</p>
+              <p className="insideGridDivsPara">
+                Insights, ideas, and inspiration for moderen marketers.
+              </p>
+            </div>
 
+            {/* ///////////// */}
+            <div className="insideGridDivs">
+              <img
+                className="sixthDivimageDivClas"
+                src="https://blog.hubspot.com/hubfs/assets/blog.hubspot.com/2018/blogroll-images/sales-blog-image.jpg"
+                alt=""
+              />
+              <p className="insideGridDivsHeading">Sales</p>
+              <p className="insideGridDivsPara">
+                Sell smarter, better and faster .
+              </p>
+            </div>
 
-  </div>
+            {/* ///////////////// */}
+            <div className="insideGridDivs">
+              <img
+                className="sixthDivimageDivClas"
+                src="https://blog.hubspot.com/hubfs/assets/blog.hubspot.com/2018/blogroll-images/service-blog-image.jpg"
+                alt=""
+              />
+              <p className="insideGridDivsHeading">Service</p>
+              <p className="insideGridDivsPara">
+                Helping you help your customers.
+              </p>
+            </div>
 
+            {/* ///////////// */}
+            <div className="insideGridDivs">
+              <img
+                className="sixthDivimageDivClas"
+                src="https://blog.hubspot.com/hubfs/assets/blog.hubspot.com/2018/blogroll-images/website-blog-image.jpg"
+                alt=""
+              />
+              <p className="insideGridDivsHeading">Website</p>
+              <p className="insideGridDivsPara">
+                All the nuts and bolts that go into building your website.
+              </p>
+            </div>
+            {/* /////////// */}
 
-</div>
+            <a className="insideGridDivs1" href="">
+              <div className="insideGridDivs">
+                <img
+                  className="sixthDivimageDivClas"
+                  src="https://blog.hubspot.com/hubfs/assets/hubspot.com/web-team/WBZ/HubSpot%20Media/The%20Hustle/Images/The%20Hustle_resized.jpg"
+                  alt=""
+                />
+                <p className="insideGridDivsHeading">The Hustle</p>
+                <p className="insideGridDivsPara">
+                  IThe insights you need to make smarter business decisions.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
 
+        {/* //////////////////////// 7th Part Divs   //////////////////////// */}
 
+        <div className="seventhPartDiv">
+          <div className="insideseventhPartDiv">
+            <div className="SubscribeLeftDic">
+              <p className="headingSubs">Subscribe to Our Blog</p>
+              <p className="headingPara">
+                Stay up to date with the latest marketing, sales, and service
+                tips and news.
+              </p>
+            </div>
 
+            <div className="SubscribeRightDic">
+              <p className="SubscribeRightDivhead">I want the latest in...</p>
+              <div className="checkboxesCategory">
+                <div className="checkboxesCategory1">
+                  <label htmlFor="market">
+                    <input type="checkbox" id="market" /> Marketing{" "}
+                  </label>
 
+                  <br />
+                  <label htmlFor="Serviceing">
+                    <input type="checkbox" id="Serviceing" /> Service{" "}
+                  </label>
+                </div>
+                <div className="checkboxesCategory1">
+                  <label htmlFor="sale">
+                    <input type="checkbox" id="sale" /> Sales{" "}
+                  </label>
+                  <br />
+                  <label htmlFor="websit">
+                    <input type="checkbox" id="websit" /> Website{" "}
+                  </label>
+                </div>
+              </div>
 
+              <div className="EmaininpurAndButton">
+                <div className="inputSubs">
+                  <p>Email Address</p>
+                  <input type="text" />
+                </div>
 
+                <div className="buttonSubs">
+                  <button>Subscribe</button>
+                </div>
+              </div>
+              <p className="bottomText">
+                We're committed to your privacy. HubSpot uses the information
+                you provide to us to contact you about our relevant content,
+                products, and services. You may unsubscribe from these
+                communications at any time. For more information, check out our{" "}
+                <a
+                  href=""
+                  style={{ fontWeight: "500", textDecoration: "underline" }}
+                >
+                  privacy policy
+                </a>
+                .
+              </p>
+            </div>
+          </div>
 
-  
-      
+          <div></div>
+        </div>
       </div>
     </div>
   );
