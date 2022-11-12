@@ -1,0 +1,80 @@
+.MArketing_text{
+    color: rgb(51, 71, 91);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    font-family: Avenir Next W02,Helvetica,Arial,sans-serif;
+
+}
+.TMspan{
+    font-weight: 200;
+    font-size: 14px;
+    color: rgb(51, 71, 91);
+    font-family: Avenir Next W02,Helvetica,Arial,sans-serif;
+    line-height: 24px;
+
+}
+.textLineOFmkHub{
+    color: rgb(107, 118, 128);
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-family: Avenir Next W02,Helvetica,Arial,sans-serif;
+    font-weight: 200;
+}
+.textLineOFmkHub>span{
+    white-space: nowrap;
+    /* font-family: Avenir Next W02,Helvetica,Arial,sans-serif; */
+    font-weight: 600;
+    -webkit-font-smoothing: antialiased;
+    color: #0091ae;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 3px;
+}
+.maketingFirstDiv{
+    text-align: center;
+}
+.BoldText{
+    font-family: Avenir Next W02,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    color: inherit;
+    font-size: 16px;
+
+}
+.offerDiv{
+    font-size: 14px;
+    align-items: center;
+    margin-top: 15px;
+    display: flex;
+    border-style: solid;
+    border-width: 1px;
+    min-height: 60px;
+    padding: 8px 20px;
+    position: relative;
+    text-align: left;
+    background-color: #e5f5f8;
+    border-color: #7fd1de;
+    
+}
+.subOfferDivsec{
+    margin-left: 12px;
+    font-size: 14px;
+    /* font-family: Avenir Next W02,Helvetica,Arial,sans-serif; */
+    font-weight: 400;
+    color: gray;
+}
+.offerdivButton{
+    background-color: #425b76;
+    border-color: #425b76;
+    color: #fff;
+    position: relative;
+    font-size: 12px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
