@@ -1,0 +1,32 @@
+.container{
+    margin:0;
+    padding:0;
+}
+.box1{
+    height:auto;
+    font-family: sans-serif;
+}
+.ProductOverview{
+    display:flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-left:9rem;
+    font-weight: 500;
+    color: #2E475D;
+}
+
+.BackImageSet{
+    height: 270px;
+    background-image: url("../AllData/UnplashBackground1.jpg");
+    background-size: cover;
+    filter:blur(4px);
+    -webkit-filter: contrast(0.2);
+    
+}
+.FloatCall{
+    border-start-start-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-end-end-radius: 60px;
+    border-top-right-radius: 60px;
+}

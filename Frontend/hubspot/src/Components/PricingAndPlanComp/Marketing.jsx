@@ -28,6 +28,8 @@ import { Show, Hide } from "@chakra-ui/react";
 import "./customStyle.css";
 import CustomCards from "./CustomCards";
 import { Marketingtab } from "./Marketingtab";
+import Faq from "../FaqComp"
+
 const Marketing = () => {
   const [sliderValue, setSliderValue] = useState(0);
   const freeTools = [

@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Flex,
@@ -9,14 +8,16 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
+import React from "react";
+import FreeTools from "../PricingAndPlanComp/FreeTools";
+import Marketing from "../../Components/PricingAndPlanComp/Marketing";
 
-import FreeTools from "./FreeTools";
-import Marketing from "./Marketing";
-const PriceAndPlans = () => {
+export default function PriceAndPlans() {
   const tabStyle = {
     fontSize: ["sm", "sm", "lg", "18px"],
     fontWeight: "600",
   };
+
   return (
     <Box>
       <Flex w={"100%"} direction={"row"} justifyContent={"center"}>
@@ -70,6 +71,4 @@ const PriceAndPlans = () => {
       </Flex>
     </Box>
   );
-};
-
-export default PriceAndPlans;
+}

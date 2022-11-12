@@ -1,0 +1,10 @@
+.tabNav {
+  padding: 15px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  border-color: white;
+  width: 100%;
+  margin: auto;
+  padding: 0px 10px 0px 10px;
+}

@@ -37,7 +37,7 @@ export default function CustomCards({
         padding={"0.3% 0.3% 0% 0.3%"}
       >
         {/* Top Section */}
-        <Flex justify={"center"} alignItems="center">
+        <Flex justify={"center"} alignItems="center" textAlign={"center"}>
           <Image
             w={"22px"}
             src={
@@ -49,21 +49,37 @@ export default function CustomCards({
           </Text>
         </Flex>
         <Box>
-          <Text fontSize={"xs"} color="rgb(51, 71, 91)" fontWeight={"light"}>
+          <Text
+            fontSize={"xs"}
+            color="rgb(51, 71, 91)"
+            fontWeight={"light"}
+            textAlign={"center"}
+          >
             start at
           </Text>
-          <Text fontSize={"lg"} color="rgb(51, 71, 91)" fontWeight={"600"}>
+          <Text
+            fontSize={"lg"}
+            color="rgb(51, 71, 91)"
+            fontWeight={"600"}
+            textAlign={"center"}
+          >
             {price}
           </Text>
-          <Text fontSize={"xs"} color="rgb(51, 71, 91)" fontWeight={"light"}>
+          <Text
+            fontSize={"xs"}
+            color="rgb(51, 71, 91)"
+            fontWeight={"light"}
+            textAlign={"center"}
+          >
             billed monthly
           </Text>
-          <Flex justifyContent={"center"}>
+          <Flex justifyContent={"center"} textAlign={"center"}>
             <NumberInput
               step={1000}
               maxW={24}
               defaultValue={defaultValue}
               min={1000}
+              textAlign={"center"}
             >
               <NumberInputField
                 borderRadius="0"
@@ -75,17 +91,17 @@ export default function CustomCards({
                 <NumberDecrementStepper />
               </NumberInputStepper>
             </NumberInput>
-            <Text fontSize={"sm"} mt="0.4em" ml="1em">
+            <Text fontSize={"sm"} mt="0.4em" ml="1em" textAlign={"center"}>
               Marketing Contacts
             </Text>
           </Flex>
-          <Text fontSize={"xs"} color="gray">
+          <Text fontSize={"xs"} color="gray" textAlign={"center"}>
             {marketing1}
           </Text>
-          <Text fontSize={"xs"} color="gray">
+          <Text fontSize={"xs"} color="gray" textAlign={"center"}>
             {marketing2}
           </Text>
-          <Text color="gray" fontSize={"xs"}>
+          <Text color="gray" fontSize={"xs"} textAlign={"center"}>
             {marketing3}
             <span className="underline">More details.</span>
           </Text>
@@ -104,7 +120,7 @@ export default function CustomCards({
           >
             <Box ml="5%" width={"52%"}>
               <Text
-                fontSize={"xs"}
+                fontSize={"m"}
                 fontWeight={"semibold"}
                 color="rgb(51, 71, 91)"
                 mt={"5%"}
@@ -116,21 +132,23 @@ export default function CustomCards({
               </Text>
             </Box>
             <Box
-              width="65%"
+              width="60%"
               ml={"15%"}
               backgroundColor="white"
               border={"1px solid teal"}
               borderRadius={"25px"}
             >
               <Text
-                fontSize={"xs"}
+                fontSize={"m"}
+                textAlign={"center"}
                 fontWeight={"semibold"}
                 color="rgb(51, 71, 91)"
-                mt={"4%"}
+                mt={"5%"}
+                
               >
                 Pay Upfront
               </Text>
-              <Text color="rgb(51, 71, 91)" fontSize={"xs"} fontWeight="light">
+              <Text color="rgb(51, 71, 91)" fontSize={"xs"} fontWeight="light" textAlign={"center"}>
                 Commit Annually
               </Text>
             </Box>
@@ -138,12 +156,16 @@ export default function CustomCards({
         </Box>
         <Button
           border="2px"
+          textAlign={"center"}
+          alignItems={"center"}
+          marginLeft={"50px"}
           fontSize={"sm"}
           backgroundColor={"#ff7a59"}
           color="white"
           width={"76%"}
           height="50px"
           mt="5%"
+          
         >
           {btnContent}
         </Button>

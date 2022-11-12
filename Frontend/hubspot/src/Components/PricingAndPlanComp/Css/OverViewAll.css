@@ -1,0 +1,22 @@
+.container{
+    margin:0;
+    padding:0;
+    background-color: rgb(215, 230, 230);
+    
+}
+.spanBtn{
+    margin-left: 49%;
+    background-color: rgb(75, 200, 75);
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    padding:0 6px 0 8px;
+    border-start-start-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.anchorTag:hover{
+    color:aquamarine;
+}
+.spantTag{
+    margin-left: 1.2rem;
+}

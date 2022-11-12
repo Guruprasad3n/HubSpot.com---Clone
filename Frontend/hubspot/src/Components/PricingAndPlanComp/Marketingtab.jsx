@@ -125,6 +125,7 @@ export const Marketingtab = () => {
                 belowBtnContent="Free tools with increased limits,"
                 link={true}
                 employees={starter}
+                
               />
             </TabPanel>
             <TabPanel>
@@ -138,6 +139,7 @@ export const Marketingtab = () => {
                 marketing3="$224.72/month."
                 belowBtnContent={"Starter"}
                 employees={professional}
+                
               />
             </TabPanel>
             <TabPanel>

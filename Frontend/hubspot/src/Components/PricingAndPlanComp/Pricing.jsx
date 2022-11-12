@@ -1,4 +1,3 @@
-import React from 'react'
 import {
   Box,
   Flex,
@@ -9,9 +8,12 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
-import Navbar from "../../Components/Navbar/Navbar";
-import PriceAndPlans from "../../Components/Pricing/PriceAndPlans"
-function Pricing() {
+import React from "react";
+import PriceAndPlans from "../Pages/Price&Plan";
+import Navbar from "../Navbar/Navbar";
+
+import TabPage from "../Pages/TabsPage"
+export default function Pricing() {
   const mainNav = {
     position: "sticky",
     top: "",
@@ -33,13 +35,14 @@ function Pricing() {
           justifyContent={"center"}
           h={"auto"}
         >
-          <Text fontWeight={"bold"} fontSize={["30px", "30px", "30px", "26px"]}>
+          <Text fontWeight={"bold"} fontSize={["30px", "30px", "30px", "26px"]} textAlign="center">
             Grow better with the right plan.
           </Text>
           <Text
             marginTop={"0.8em"}
             marginBottom={"2em"}
             fontSize={["14px", "14px", "14px", "14px"]}
+            textAlign="center"
           >
             Pay for what you need (when you need it).
           </Text>
@@ -63,7 +66,7 @@ function Pricing() {
               <PriceAndPlans />
             </TabPanel>
             <TabPanel bgColor={"white"}>
-            
+              <TabPage />
               {/* <p>two!</p> */}
             </TabPanel>
           </TabPanels>
@@ -72,5 +75,3 @@ function Pricing() {
     </Box>
   );
 }
-
-export default Pricing

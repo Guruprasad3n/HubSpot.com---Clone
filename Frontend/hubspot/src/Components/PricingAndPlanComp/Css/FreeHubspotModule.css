@@ -1,0 +1,45 @@
+.Container{
+    margin:0;
+    padding:0;
+}
+.box{
+    height:auto;
+    font-family: sans-serif;
+    background-color:rgb(222, 244, 244);
+}
+.home{
+    display:flex;
+    gap: 10px;
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-left:9rem;
+    font-weight: 500;
+    color: #2E475D;
+}
+.crmImg{
+    display:flex;
+    margin:auto;
+    width: 80%;
+    margin-top: 4rem;
+    
+}
+.crmbtn{
+padding: 12px 20px 12px 20px;
+background-color: #FF5C35;
+color: white;
+font-size: 16px;
+font-weight: 600;
+margin-top: 1.5rem;
+}
+.listOne{
+    list-style: none;
+    margin-left: -1rem;
+}
+.crmbtn:hover{
+    background-color: rgb(240, 187, 80);
+}
+.anchorTagCRM:hover{
+    text-decoration: underline;
+    
+    color:rgb(107, 192, 192);
+}

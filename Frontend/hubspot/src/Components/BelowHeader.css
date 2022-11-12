@@ -1,0 +1,5 @@
+.cyanText:hover{
+
+    cursor: pointer;
+    border-bottom: 2px solid rgb(8, 119, 119)
+}
