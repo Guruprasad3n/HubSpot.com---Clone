@@ -10,6 +10,8 @@ function Navbar() {
           <Box cursor='pointer'>
             <Image w={['6.7rem']} src='https://upload.wikimedia.org/wikipedia/commons/7/71/HubSpot_Logo.png?20160320023850' />
           </Box>
+
+          {/*Need some changes here*/}
           <Flex fontSize='1.2rem' w={{ sm: '20vw', base: '20vw', md: '50vw', lg: '20vw' }} justifyContent='space-between' alignItems='center'>
             <Link textDecoration='none' href=''>
               <Text cursor='pointer' fontSize='1.1rem' fontWeight='500' color='#2e475d'>Software</Text>
@@ -34,7 +36,7 @@ function Navbar() {
         </Flex>
       </Flex>
 
-      {/*For Smaller screens*/}
+      {/*For Smaller screens only*/}
       <Flex display={['flex', 'flex', 'flex', 'none']} justifyContent='space-between' alignItems='center' h={['8vh']} w='98%' m='auto'>
         <Image w='2.7rem' src='https://img.icons8.com/external-tal-revivo-color-tal-revivo/512/external-hubspot-a-developer-and-marketer-of-software-products-logo-color-tal-revivo.png' />
 
