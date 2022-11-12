@@ -17,7 +17,7 @@ import {
   Image
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock } from "react-icons/fa";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../redux/auth/auth.action";
 
 const CFaUserAlt = chakra(FaUserAlt);
@@ -27,7 +27,7 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loginCreds,setLoginCreds]= useState({})
   const handleShowClick = () => setShowPassword(!showPassword);
-  
+  const Auth = useSelector((store)=>store.Auth.isAuth)
   const dispatch= useDispatch()
   const handleChange=(e)=>{
     const {name,value}=e.target;
