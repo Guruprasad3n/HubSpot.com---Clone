@@ -23,7 +23,6 @@ function Resources() {
     <div>
       <TopBar />
       <Navbar />
-
       <div className="mainContainer">
         <div className="topResource">
           {/* Flex Div-1 */}
