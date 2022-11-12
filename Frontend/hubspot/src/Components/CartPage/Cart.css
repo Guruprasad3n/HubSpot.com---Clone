@@ -1,0 +1,45 @@
+.confirmationMainDiv{
+    margin: auto;
+    width: 65%;
+    border:1px solid rgb(203,214,226);
+    padding: 50px;
+    border-radius: 3px;
+}
+.confirm1div{
+    font-weight: 500;
+    font-size: 24px;
+    color: #33475b;
+    margin-bottom: 5px;
+}
+.confirm1div1{
+    font-weight: 400;
+    font-size: 14px;
+    color: #33475b;
+    margin-bottom: 10px;
+}
+.confirm1div2{
+    font-weight: 400;
+    font-size: 14px;
+    color: #516f90;
+}
+.confirmMAin1{
+    padding: 10px;
+}
+.confirmAlltext{
+    margin-bottom: 12px!important;
+    font-weight: 300;
+    font-size: 15px;
+    color: #33475b;
+    line-height: 24px;
+}
+.confirmBoldText{
+    font-weight: bold;
+    font-size: 14px;
+    color: #33475b;
+    line-height: 24px;
+}
+.confirmBoldNum{
+    font-weight: 600;
+    color: #33475b;
+    font-size: 16px;
+}

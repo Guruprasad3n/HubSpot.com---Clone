@@ -1,0 +1,76 @@
+*{
+    color:'#33475b'
+}
+.paymentNavImg{
+   margin: auto;
+}
+.paymentDiv{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: auto;
+    gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+@media screen and (max-width: 900px) and (min-width: 240px) {
+    .paymentDiv{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        gap: 20px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}
+.paymentDiv1{
+    position: relative;
+    border: 1px solid rgb(203,214,226);
+    border-radius: 3px;
+}
+.detailDivText{
+    font-weight: 400;
+    font-size: 24px;
+    color: #33475b;
+    margin-bottom:10px
+}
+.detailsDivInfo{
+    margin-bottom: 28px!important;
+    background-color: #fef8f0;
+    border:1px solid #fae0b5;
+    color:#33475b;
+    font-size: 14px;
+    padding: 8px;
+    text-align: left;
+    
+}
+.cardInputDiv{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.cardInputDiv>div>img{
+    width:34px;
+   
+}
+input{
+    background-color: rgb(254, 250, 250);
+}
+.paymentpage2div{
+    position: relative;
+    border: 1px solid rgb(203,214,226);
+    border-radius: 3px;
+}
+.SubscriptionDiv{
+
+    padding-top: 8px!important;
+    padding-bottom: 8px!important;
+    padding-left: 16px;
+    background-color: rgb(245, 248, 250);
+    font-weight: 500;
+    border-bottom: 1px solid rgb(203, 214, 226);
+    font-size: 14px;
+    color:'#33475b';
+
+}
