@@ -18,14 +18,36 @@ import {
   Text
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock ,FaAddressCard,FaBriefcase} from "react-icons/fa";
+import axios from "axios";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
 
+const signupPost=(creds)=>{
+  return axios.post("https://unit5project.onrender.com/users/signup",creds)
+}
+
+
 const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
-
+  const [signupCreds,setSignupCreds]=useState({})
   const handleShowClick = () => setShowPassword(!showPassword);
+  const handleChange=(e)=>{
+    const {name,value}=e.target;
+    setSignupCreds({
+      ...signupCreds,
+      [name]:value,
+    })
+  }
+ const signupForm=()=>{
+    signupPost(signupCreds)
+    .then((res)=>console.log(res.data.token))
+    .catch((e)=>console.log(e))
+ }
+ const handleClick=(e)=>{
+    e.preventDefault()
+    signupForm()
+ }
 
   return (
     <Flex
@@ -57,7 +79,7 @@ const Signup = () => {
                     pointerEvents="none"
                     children={<CFaUserAlt  />}
                   />
-                  <Input type="text" placeholder="Full name" />
+                  <Input type="text" name="name" onChange={handleChange} placeholder="Full name" />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -66,7 +88,7 @@ const Signup = () => {
                     pointerEvents="none"
                     children={<FaAddressCard color="gray.300" />}
                   />
-                  <Input type="text" placeholder="website name" />
+                  <Input type="text" name="Websitename" onChange={handleChange} placeholder="website name" />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -75,7 +97,7 @@ const Signup = () => {
                     pointerEvents="none"
                     children={<FaBriefcase color="gray.300" />}
                   />
-                  <Input type="text" placeholder="company name" />
+                  <Input type="text" name="Companyname" onChange={handleChange} placeholder="company name" />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -84,7 +106,7 @@ const Signup = () => {
                     pointerEvents="none"
                     children={<CFaUserAlt  />}
                   />
-                  <Input type="email" placeholder="email address" />
+                  <Input type="email" name ="email" onChange={handleChange} placeholder="email address" />
                 </InputGroup>
               </FormControl>
               <FormControl>
@@ -96,6 +118,8 @@ const Signup = () => {
                   />
                   <Input
                     type={showPassword ? "text" : "password"}
+                    name="password"
+                    onChange={handleChange}
                     placeholder="Password"
                   />
                   <InputRightElement width="4.5rem">
@@ -114,6 +138,7 @@ const Signup = () => {
                 variant="solid"
                 colorScheme="teal"
                 width="full"
+                onClick={handleClick}
               >
                 Sign Up
               </Button>
@@ -128,4 +153,4 @@ const Signup = () => {
   );
 };
 
-export default Signup
+export default Signup
