@@ -22,6 +22,8 @@ import { login } from "../redux/auth/auth.action";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import TopBar from "../Navbar/TopBar";
+import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -30,7 +32,9 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [loginCreds, setLoginCreds] = useState({})
   const handleShowClick = () => setShowPassword(!showPassword);
-  const Auth = useSelector((store) => store.Auth.isAuth)
+  const Auth = useSelector((store) => store.auth.isAuth)
+   const Navigate=useNavigate();
+  
   const dispatch = useDispatch()
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -42,8 +46,18 @@ const Login = () => {
   const handlesubmit = (e) => {
     e.preventDefault();
     dispatch(login(loginCreds))
+    
   }
 
+  useEffect(()=>{
+    if(Auth){
+      Navigate("/softwarepage")
+    }
+  },[Auth])
+
+  console.log(Auth);
+
+ 
   return (
     <>
       <TopBar/>
@@ -120,7 +134,7 @@ const Login = () => {
         </Stack>
         <Box>
           New to us?{" "}
-          <Link color="teal.500" href="#">
+          <Link color="teal.500" href="/signup">
             Sign Up
           </Link>
         </Box>

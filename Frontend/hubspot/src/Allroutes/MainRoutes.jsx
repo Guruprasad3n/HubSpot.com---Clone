@@ -9,6 +9,7 @@ import Signup from '../Components/Login/signup'
 import Payment from '../Components/PaymentPage/Payment'
 import Pricing from '../Components/Pricing/Pricing'
 import PricingPage from '../Components/PricingPage/PricingPage'
+import RequireAuth from '../Components/RequireAuth/RequireAuth'
 import Resources from '../Components/Resources/Resources'
 
 
@@ -20,10 +21,10 @@ const Mainroutes = () => {
             <Route path='/resource' element={<Resources />}></Route>
             <Route path="/login" element={<Login />} />
             <Route path='/signup' element={<Signup />}></Route>
-            <Route path='/cart' element={<CartPage />}></Route>
-            <Route path='/payment' element={<Payment />}></Route>
-            <Route path='/softwarepage' element={<PricingPage />}></Route>
-            <Route path='/checkoutpage' element={<CheckOut />}></Route>
+            <Route path='/cart' element={<RequireAuth><CartPage /></RequireAuth>}></Route>
+            <Route path='/payment' element={<RequireAuth><Payment /></RequireAuth>}></Route>
+            <Route path='/softwarepage' element={<RequireAuth><PricingPage /></RequireAuth>}></Route>
+            <Route path='/checkout' element={<RequireAuth><CheckOut /></RequireAuth>}></Route>
         </Routes>
     )
 }

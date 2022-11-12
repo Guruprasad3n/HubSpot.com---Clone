@@ -5,7 +5,6 @@ import {
     Flex,
     Avatar,
     HStack,
-    Link,
     IconButton,
     Button,
     Menu,
@@ -19,10 +18,16 @@ import {
     Img,
     Text
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
-import { useSelector } from 'react-redux';
+import {Link} from "react-router-dom";
+import { HamburgerIcon, CloseIcon, UnlockIcon } from '@chakra-ui/icons';
+import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import logout from '../redux/auth/auth.action';
+
+
+
 
 // const Links = ['Dashboard', 'Projects', 'Team'];
 
@@ -43,6 +48,25 @@ const iU={
 const Navabr1 = () => {
     const [user,setUser]=useState(iU)
     const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+    const isAuth =useSelector(store =>store.auth.isAuth);
+    const dispatch =useDispatch();
+    const navigate = useNavigate()
+
+
+    const handleLoginClick = () => {
+        // login screen
+        if (isAuth) {
+          dispatch(logout())
+          // he wants to logout
+        } else {
+          // he wants to login
+          navigate("/login");
+        }
+      };
+    
+
     
     // if(User){
     //     setUser(User);
@@ -66,26 +90,26 @@ const Navabr1 = () => {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <HStack spacing={8} alignItems={'center'}>
-                        <Box ><Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'/'}>
+                        <Box ><Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'/'}>
                         <Img src="https://i.ibb.co/jW2PNH3/free-logo-2nozrs0d3q-9018fh8aco.jpg" alt="Logo" border="0" width={"80%"} />
                             </Link></Box>
                         <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/company/contact'}>
                                 Contacts
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/conversation'}>
                                 Conversations
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/marketing'}>
                                 Marketing
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/sales'}>
                                 Sales
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/services'}>
                                 Services
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/automation'}>
                                 Automation
                             </Link>
                         </HStack>
@@ -96,8 +120,9 @@ const Navabr1 = () => {
                             colorScheme={'teal'}
                             size={'sm'}
                             mr={4}
-                            leftIcon={<AddIcon />}>
-                            Action
+                            leftIcon={<UnlockIcon />}
+                            onClick={handleLoginClick}>
+                            {isAuth?"Logout":"Login"}
                         </Button>
                         <Menu>
                             <MenuButton
@@ -127,22 +152,22 @@ const Navabr1 = () => {
                 {isOpen ? (
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
-                        <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                        <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/company/contact'}>
                                 Contacts
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/conversation'}>
                                 Conversations
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/marketing'}>
                                 Marketing
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/sales'}>
                                 Sales
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/services'}>
                                 Services
                             </Link>
-                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} href={'#'}>
+                            <Link px={2} py={1} rounded={'md'} _hover={{ textDecoration: 'none', bg: "gray.700", color:"white" }} to={'https://www.hubspot.com/products/automation'}>
                                 Automation
                             </Link>
                         </Stack>
