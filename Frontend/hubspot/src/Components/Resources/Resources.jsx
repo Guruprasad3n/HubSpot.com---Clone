@@ -1,4 +1,7 @@
 import React from "react";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
+import TopBar from "../Navbar/TopBar";
 import "./resources.css";
 
 const ExploreTopics = [
@@ -15,8 +18,12 @@ const ExploreTopics = [
 ];
 
 function Resources() {
+
   return (
     <div>
+      <TopBar />
+      <Navbar />
+
       <div className="mainContainer">
         <div className="topResource">
           {/* Flex Div-1 */}
@@ -515,6 +522,7 @@ function Resources() {
           <div></div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

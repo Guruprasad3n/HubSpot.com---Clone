@@ -1,6 +1,7 @@
-import { Box, Flex, Text, Image, Button, Link } from '@chakra-ui/react';
+import { Box, Flex, Text, Image, Button } from '@chakra-ui/react';
 import { FiChevronDown } from 'react-icons/fi';
 import MenuComp from './MenuComp';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -13,15 +14,17 @@ function Navbar() {
 
           {/*Need some changes here*/}
           <Flex fontSize='1.2rem' w={{ sm: '20vw', base: '20vw', md: '50vw', lg: '20vw' }} justifyContent='space-between' alignItems='center'>
-            <Link textDecoration='none' href=''>
+            <Link textDecoration='none' to='/softwarepage'>
               <Text cursor='pointer' fontSize='1.1rem' fontWeight='500' color='#2e475d'>Software</Text>
             </Link>
-            <Link textDecoration='none' href=''>
+            <Link textDecoration='none' to='/pricing'>
               <Text cursor='pointer' fontSize='1.1rem' fontWeight='500' color='#2e475d'>Pricing</Text>
             </Link>
             <Flex gap={['0.5rem']} cursor='pointer' justifyContent='space-between' alignItems='center'>
-              <Text fontSize='1.1rem' fontWeight='500' color='#2e475d'>Resources</Text>
-              <FiChevronDown />
+              <Link textDecoration='none' to='/resource'>
+                <Text fontSize='1.1rem' fontWeight='500' color='#2e475d'>Resources</Text>
+                <FiChevronDown />
+              </Link>
             </Flex>
           </Flex>
         </Flex>

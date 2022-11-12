@@ -1,7 +1,15 @@
 import { Box, Button, Flex, Image, Text, Link, SimpleGrid, Stack } from '@chakra-ui/react';
+import Footer from '../Footer/Footer';
+import Footer1 from '../footerg/Footer1';
+import Navbar from '../Navbar/Navbar';
+import TopBar from '../Navbar/TopBar';
 
 function Home() {
   return (
+    
+    <>
+    <TopBar />
+    <Navbar />
     <Box>
       <Flex direction={['column', 'column', 'row', 'row']} h={['80vh', '100vh', '80vh', '80vh']} w='100%' bgColor='#ff5c35'>
         <Flex w={['100%', '100%', '50%', '50%']} direction='column' color='whitesmoke' justifyContent='center' alignItems='center'>
@@ -228,6 +236,8 @@ function Home() {
       </Flex >
 
     </Box >
+    <Footer/>
+    </>
   )
 }
 

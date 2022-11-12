@@ -1,8 +1,9 @@
-import { Box, Flex, Text, Link } from '@chakra-ui/react';
+import { Box, Flex, Text } from '@chakra-ui/react';
 import { BsFillMicFill } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi';
 import { RiUserFill } from 'react-icons/ri';
 import { BiSearch } from 'react-icons/bi';
+import {Link} from "react-router-dom";
 
 const TopBar = () => {
     return (
@@ -28,10 +29,10 @@ const TopBar = () => {
 
                 <Flex w={['20vw']} justifyContent='space-between' alignItems='center'>
                     <BiSearch cursor='pointer' color='blue' />
-                    <Link textDecoration='none' href=''>
+                    <Link textDecoration='none' to='/login'>
                         <Text cursor='pointer' fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>Log in</Text>
                     </Link>
-                    <Link textDecoration='none' href=''>
+                    <Link textDecoration='none' to='/signup'>
                         <Text cursor='pointer' fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>Customer Support</Text>
                     </Link>
                     <Flex gap={['0.5rem']} cursor='pointer' justifyContent='space-between' alignItems='center'>

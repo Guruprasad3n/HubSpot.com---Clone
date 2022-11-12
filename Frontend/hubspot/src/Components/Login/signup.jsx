@@ -19,6 +19,9 @@ import {
 } from "@chakra-ui/react";
 import { FaUserAlt, FaLock ,FaAddressCard,FaBriefcase} from "react-icons/fa";
 import axios from "axios";
+import TopBar from "../Navbar/TopBar";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -49,7 +52,12 @@ const Signup = () => {
     signupForm()
  }
 
+
   return (
+    
+    <>
+     <TopBar/>
+    <Navbar/>
     <Flex
       flexDirection="column"
       width="100wh"
@@ -150,6 +158,8 @@ const Signup = () => {
        
       </Box>
     </Flex>
+    <Footer />
+    </>
   );
 };
 
