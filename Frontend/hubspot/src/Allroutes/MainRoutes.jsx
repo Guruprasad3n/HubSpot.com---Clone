@@ -1,4 +1,4 @@
-import { Stack } from '@chakra-ui/react'
+// import { Stack } from '@chakra-ui/react'
 import React from 'react'
 import { Routes, Route } from "react-router-dom"
 import CartPage from '../Components/CartPage/CartPage'

@@ -15,7 +15,7 @@ const MenuComp = () => {
             />
             <MenuList w='20vw'>
                 <MenuItem>
-                    <Link textDecoration='none' to='/software'>
+                    <Link textDecoration='none' to='/softwarepage'>
                         <Text fontSize='1.4rem' fontWeight='500' color='#2e475d'>Software</Text>
                     </Link>
                 </MenuItem>

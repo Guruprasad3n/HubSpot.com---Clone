@@ -9,8 +9,6 @@ import {
   InputLeftElement,
   chakra,
   Box,
-  Link,
-  Avatar,
   FormControl,
   FormHelperText,
   InputRightElement,
@@ -24,6 +22,7 @@ import Navbar from "../Navbar/Navbar";
 import TopBar from "../Navbar/TopBar";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
+import {Link} from "react-router-dom";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -134,7 +133,7 @@ const Login = () => {
         </Stack>
         <Box>
           New to us?{" "}
-          <Link color="teal.500" href="/signup">
+          <Link color="teal.500" to="/signup">
             Sign Up
           </Link>
         </Box>
