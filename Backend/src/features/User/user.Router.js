@@ -1,7 +1,9 @@
 const express = require("express");
 const User= require("./user.module");
-
+const jwt= require("jsonwebtoken");
+const argon = require("argon2")
 const app = express.Router();
+require("dotenv").config();
 
 const Authmiddleware=async(req,res,next)=>{
   let token=req.headers.token;
@@ -31,15 +33,15 @@ app.post("/login",async(req,res)=>{
  try{
     let user= await User.findOne({email});
     if(user){
-       if(password===user.password){
-        res.send({
-          token: `${email}_#_${password}`,
-          userdetail:{
-            email:user.email,
-            name:user.name,
-            Companyname:user.Companyname,
-            Websitename:user.Websitename
-          }
+       if(await argon.verify(user.password,password)){
+        const token= jwt.sign({
+          ...user
+      },process.env.SECRETKEY,{
+          expiresIn:process.env.EXPIRYDATE
+      })
+        res.status(200).send({
+          token ,
+          userdetail:user
         })
        }else{
         res.send(401).send("Authentication Failure, incorrect password")
@@ -56,6 +58,7 @@ app.post("/login",async(req,res)=>{
 })
 app.post("/signup",async(req,res)=>{
   const {email,password,name,Companyname,Websitename}=req.body;
+  const hash= await argon.hash(password)
   try{
    let existingUser=await User.findOne({email});
    if(existingUser){
@@ -63,7 +66,7 @@ app.post("/signup",async(req,res)=>{
    }else 
    {let user= await User.create({
     email,
-    password,
+    password:hash,
     name,
     Companyname,
     Websitename,
