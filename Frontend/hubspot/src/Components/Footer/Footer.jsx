@@ -6,7 +6,7 @@ import FooterAccordion from './FooterAccordion';
 
 function Footer() {
   return (
-    <Box h={['56vh', '56vh', '58vh', '87vh']} bgColor='#213343' color='white'>
+    <Box bgColor='#213343' color='white'>
       <Flex w={['80%']} display={['none', 'none', 'none', 'flex']} m='auto' direction='column'>
 
         <Flex h='58vh' alignItems='center' >
