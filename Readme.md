@@ -69,4 +69,4 @@
 
 <h3 align="center"> Team Members </h3>
 
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Team%20Members.jpg" alt="Card Details">
+<img src="https://i.ibb.co/ScP6WGM/unit5-team-members.jpg" alt="unit5-team-members" border="0">
