@@ -1,4 +1,6 @@
-import React from 'react'
+
+
+import React from "react";
 import {
   Box,
   Flex,
@@ -11,9 +13,9 @@ import {
 } from "@chakra-ui/react";
 // import Navbar from "../Navbar/Navbar";
 // import PriceAndPlans from "../Planning/PriceAndPlans"
-import Footer from '../Footer/Footer';
+import Footer from "../Footer/Footer";
 // import TopBar from '../Navbar/TopBar';
-import GrowBetter from '../Planning1/GrowB';
+import GrowBetter from "../Planning1/GrowB";
 function Planning() {
   return (
     <>

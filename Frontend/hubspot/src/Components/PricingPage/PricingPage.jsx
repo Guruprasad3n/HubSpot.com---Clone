@@ -8,18 +8,18 @@ import CalulatePrice from "../CalculatePrice/CalculatePrice";
 import CustomerS from "../CustomerS/CustomerSupport";
 import Footer1 from "../footerg/Footer1";
 const PricingPage = () => {
-    return (
-        <>
-            <Navabr1 />
-            <Header />
-            <MarketingHub />
-            <Offers />
-            <RecomendedBundles/>
-            <CalulatePrice />
-            <CustomerS />
-            <Footer1 />
-        </>
-    )
-}
+  return (
+    <>
+      <Navabr1 />
+      <Header />
+      <MarketingHub />
+      <Offers />
+      <RecomendedBundles />
+      <CalulatePrice />
+      <CustomerS />
+      <Footer1 />
+    </>
+  );
+};
 
-export default PricingPage
+export default PricingPage;
