@@ -30,16 +30,16 @@
 <img src="https://i.ibb.co/hVZxKrd/image.png" alt="softwairePage second" border="0">
 
 <h3 align="center">Pricing Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Pricing.png" alt="Pricing page">
+<img src="https://i.ibb.co/pZSXf6J/image.png" alt="image" border="0">
 
 <h3 align="center">Resource Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Resources.png" alt="Resource page">
+<img src="https://i.ibb.co/q1VQ2Y9/image.png" alt="image" border="0">
 
 <h3 align="center">Footer</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Footer.png" alt="Footer">
+<img src="https://i.ibb.co/0F1wXp0/image.png" alt="image" border="0">
 
 <h3 align="center">Login</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Login.png" alt="Login">
+<img src="https://i.ibb.co/486SdRj/image.png" alt="image" border="0">
 
 <h3 align="center">Signup</h3>
 <img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Signup.png" alt="Signup">
