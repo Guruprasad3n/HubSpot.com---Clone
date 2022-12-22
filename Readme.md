@@ -62,7 +62,7 @@
 
 
 <h3 align="center"> Team Project Contributions </h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Team%20Contribution.jpg" alt="Card Details">
+<img src="https://i.ibb.co/p2Szng6/image.png" alt="image" border="0">
 
 
 <hr>
