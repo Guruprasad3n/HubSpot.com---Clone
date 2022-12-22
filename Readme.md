@@ -23,7 +23,7 @@
 <hr>
 
 <h3 align="center">Home page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Home.png" alt="Home page">
+<img src="https://i.ibb.co/RCcD4Yq/image.png" alt="Home page" border="0">
 
 <h3 align="center">Software Page</h3>
 <img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Software.png" alt="Software page">
