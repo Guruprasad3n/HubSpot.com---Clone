@@ -26,7 +26,8 @@
 <img src="https://i.ibb.co/RCcD4Yq/image.png" alt="Home page" border="0">
 
 <h3 align="center">Software Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Software.png" alt="Software page">
+<img src="https://i.ibb.co/6RrBCbR/image.png" alt="softwarepage1" border="0">
+<img src="https://i.ibb.co/hVZxKrd/image.png" alt="softwairePage second" border="0">
 
 <h3 align="center">Pricing Page</h3>
 <img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Pricing.png" alt="Pricing page">
