@@ -128,7 +128,7 @@ export default function GrowBetter() {
                     fontSize="18px"
                     p="25px 0px"
                   >
-                    Operations
+                 Operations
                   </Tab>
                 </TabList>
                 <TabPanels>
