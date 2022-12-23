@@ -23,48 +23,50 @@
 <hr>
 
 <h3 align="center">Home page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Home.png" alt="Home page">
+<img src="https://i.ibb.co/RCcD4Yq/image.png" alt="Home page" border="0">
 
 <h3 align="center">Software Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Software.png" alt="Software page">
+<img src="https://i.ibb.co/6RrBCbR/image.png" alt="softwarepage1" border="0">
+<img src="https://i.ibb.co/hVZxKrd/image.png" alt="softwairePage second" border="0">
 
 <h3 align="center">Pricing Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Pricing.png" alt="Pricing page">
+<img src="https://i.ibb.co/pZSXf6J/image.png" alt="image" border="0">
 
 <h3 align="center">Resource Page</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Resources.png" alt="Resource page">
+<img src="https://i.ibb.co/q1VQ2Y9/image.png" alt="image" border="0">
 
 <h3 align="center">Footer</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Footer.png" alt="Footer">
+<img src="https://i.ibb.co/0F1wXp0/image.png" alt="image" border="0">
 
 <h3 align="center">Login</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Login.png" alt="Login">
+<img src="https://i.ibb.co/486SdRj/image.png" alt="image" border="0">
 
 <h3 align="center">Signup</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Signup.png" alt="Signup">
+<img src="https://i.ibb.co/cYprycj/image.png" alt="image" border="0">
 
 
 <h3 align="center">Profile Data</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Login_ProfileDetails.png" alt="Profile Data page">
+<img src="https://i.ibb.co/TLb2H6V/image.png" alt="image" border="0">
 
 <h3 align="center">Payment Data</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Payment_Priving.png" alt="Payment page">
+<img src="https://i.ibb.co/1976sPg/image.png" alt="image" border="0">
+
 
 <h3 align="center">Patment Confirmation</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Payment_trem.png" alt="Patment Confirmation">
+<img src="https://i.ibb.co/1GG04zV/image.png" alt="image" border="0">
 
 <h3 align="center">Card Details</h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/payment.png" alt="Card Details">
+<img src="https://i.ibb.co/4St2jts/image.png" alt="image" border="0">
 
 <hr>
 
 
 <h3 align="center"> Team Project Contributions </h3>
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Team%20Contribution.jpg" alt="Card Details">
+<img src="https://i.ibb.co/p2Szng6/image.png" alt="image" border="0">
 
 
 <hr>
 
 <h3 align="center"> Team Members </h3>
 
-<img src="https://github.com/Guruprasad3n/humane-shelf-7123/blob/main/Frontend/hubspot/src/Assets/Team%20Members.jpg" alt="Card Details">
+<img src="https://i.ibb.co/ScP6WGM/unit5-team-members.jpg" alt="unit5-team-members" border="0">

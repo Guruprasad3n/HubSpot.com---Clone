@@ -22,6 +22,7 @@ import axios from "axios";
 import TopBar from "../Navbar/TopBar";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import { useNavigate } from "react-router-dom";
 
 const CFaUserAlt = chakra(FaUserAlt);
 const CFaLock = chakra(FaLock);
@@ -35,6 +36,9 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [signupCreds, setSignupCreds] = useState({})
   const handleShowClick = () => setShowPassword(!showPassword);
+
+  const navigate = useNavigate()
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setSignupCreds({
@@ -43,9 +47,21 @@ const Signup = () => {
     })
   }
   const signupForm = () => {
-    signupPost(signupCreds)
-      .then((res) => console.log(res.data.token))
-      .catch((e) => console.log(e))
+    if(signupCreds.name&&signupCreds.Websitename&&signupCreds.Companyname&&signupCreds.email&&signupCreds.password){
+      signupPost(signupCreds)
+      .then((res) => {
+        console.log(res.data.token)
+        alert("Signup successfull 👍 ");
+        navigate("/login")
+      })
+      .catch((e) => {
+        console.log(e)
+        alert("User with this email is already exist!")
+      })
+    }else{
+      alert("Please fill all the feild with appropriate detail!");
+    }
+    
   }
   const handleClick = (e) => {
     e.preventDefault()
