@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import {
   Box,
@@ -11,10 +9,7 @@ import {
   Tab,
   TabPanel,
 } from "@chakra-ui/react";
-// import Navbar from "../Navbar/Navbar";
-// import PriceAndPlans from "../Planning/PriceAndPlans"
 import Footer from "../Footer/Footer";
-// import TopBar from '../Navbar/TopBar';
 import GrowBetter from "../Planning1/GrowB";
 function Planning() {
   return (
