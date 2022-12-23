@@ -44,7 +44,11 @@ const Login = () => {
   }
   const handlesubmit = (e) => {
     e.preventDefault();
-    dispatch(login(loginCreds))
+    if(loginCreds.email&&loginCreds.password){
+      dispatch(login(loginCreds))
+    }else{
+      alert("Please enter proper email and password")
+    }
     
   }
 
@@ -63,8 +67,8 @@ const Login = () => {
       <Navbar />
       <Flex
         flexDirection="column"
-        width="100wh"
-        height="100vh"
+        w="100wh"
+        h="100vh"
         backgroundColor="white"
         justifyContent="center"
         alignItems="center"
