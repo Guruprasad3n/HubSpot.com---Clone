@@ -21,7 +21,6 @@ export default function GrowBetter() {
       <TopBar />
       <Navbar />
       <div >
-        
         <Box
           bgColor="rgb(0, 189, 165)"
           backgroundImage="linear-gradient(-303deg, rgb(0, 164, 189), 0%, rgb(0, 175, 178) 56%, rgb(0, 189, 165) 100%)"

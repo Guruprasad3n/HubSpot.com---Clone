@@ -15,7 +15,6 @@ function Planning() {
   return (
     <>
       <GrowBetter />
-
       <Footer />
     </>
   );
