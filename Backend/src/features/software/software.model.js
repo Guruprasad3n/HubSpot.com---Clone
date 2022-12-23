@@ -17,12 +17,12 @@ const softwareSchema= new mongoose.Schema({
         requied:true
     },
     monthlyprice:{
-        type:String,
+        type:Number,
         min:1,
         requied:true
     },
     upfrontprice:{
-        type:String,
+        type:Number,
         min:1,
         requied:true
     },
