@@ -32,10 +32,10 @@ function Navbar() {
         </Flex>
 
         <Flex w={['20vw', '20vw', '23vw', '20vw']} justifyContent='space-between' alignItems='center'>
-          <Link style={{ textDecoration: 'none' }} target='_blank' href='https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www.hubspot.com&hubs_signup-cta=homepage-nav2-smart&uuid=7d8c0f06-26d6-47c9-91d1-028fd0d47bad&step=landing_page'>
+          <Link style={{ textDecoration: 'none' }} target='_blank'>
             <Button display={['none', 'none', 'none', 'flex']} cursor='pointer' colorScheme='red' bgColor='#ff5c35' fontSize='0.8rem' fontWeight='600' border='1px solid #ff5c35' color='white' borderRadius='0.2rem' w={['9.4vw']} h={['4.4vh']} fontFamily='sans-serif'>Get a demo</Button>
           </Link>
-          <Link style={{ textDecoration: 'none' }} target='_blank' href='https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www.hubspot.com&hubs_signup-cta=homepage-nav2-smart&uuid=428de45f-c97a-4e0f-a3aa-9f62821b69b2&step=landing_page'>
+          <Link style={{ textDecoration: 'none' }} target='_blank'>
             <Button display={['none', 'none', 'none', 'flex']} cursor='pointer' border='1px solid #ff5c35' bgColor='white' color=' #ff5c35' fontSize='0.8rem' fontWeight='600' borderRadius='0.2rem' w={['9.4vw', '9.4vw', '11vw', '9.4vw']} h={['4.4vh']} fontFamily='sans-serif'>Get started free</Button>
           </Link>
         </Flex>
