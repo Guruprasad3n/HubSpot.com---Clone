@@ -1,4 +1,3 @@
-
 import {
   Image,
   Flex,
@@ -9,7 +8,7 @@ import {
   Link,
   Button,
 } from "@chakra-ui/react";
-import FreeT from "./FreeT.css"
+
 
 export default function FreeTools() {
   return (
