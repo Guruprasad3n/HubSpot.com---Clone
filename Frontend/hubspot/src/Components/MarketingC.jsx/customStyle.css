@@ -1,0 +1,51 @@
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.underline{
+    color: #00AFB2
+}
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .SwitchContainer {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    border-radius: 35px;
+    width: max-content;
+    height: max-content;
+  }
+  
+  .ToggleItem {
+    height: 40px;
+    width: 80px;
+    display: flex;
+    border-radius: 35px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .Text {
+    color: white;
+    font-size: 14px;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: blanchedalmond;
+  }
+  
