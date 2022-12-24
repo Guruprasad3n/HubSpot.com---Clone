@@ -3,7 +3,7 @@ import { BsFillMicFill } from 'react-icons/bs';
 import { FiChevronDown } from 'react-icons/fi';
 import { RiUserFill } from 'react-icons/ri';
 import { BiSearch } from 'react-icons/bi';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
     return (
@@ -21,7 +21,7 @@ const TopBar = () => {
                     </Flex>
                     <Flex gap={['3']} justifyContent='center' alignItems='center'>
                         <RiUserFill />
-                        <Link href='https://offers.hubspot.com/contact-sales?hubs_signup-url=www.hubspot.com/&hubs_signup-cta=homepage-nav-contact-sales' target='_blank'>
+                        <Link target='_blank'>
                             <Text fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>Contact Sales</Text>
                         </Link>
                     </Flex>
@@ -36,7 +36,7 @@ const TopBar = () => {
                         <Text cursor='pointer' fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>Customer Support</Text>
                     </Link>
                     <Flex gap={['0.5rem']} cursor='pointer' justifyContent='space-between' alignItems='center'>
-                        <Link href='https://www.hubspot.com/our-story' target='_blank'>
+                        <Link target='_blank'>
                             <Text fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>About</Text>
                         </Link>
                         <FiChevronDown />
