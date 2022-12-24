@@ -20,7 +20,7 @@ const MenuComp = () => {
                     </Link>
                 </MenuItem>
                 <MenuItem>
-                    <Link textDecoration='none' to='/pricing'>
+                    <Link textDecoration='none' to='/marketing'>
                         <Text fontSize='1.4rem' fontWeight='500' color='#2e475d'>Pricing</Text>
                     </Link>
                 </MenuItem>
