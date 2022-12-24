@@ -30,7 +30,7 @@ function Home() {
               <Link style={{ textDecoration: 'none' }} target='_blank' href='https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www.hubspot.com&hubs_signup-cta=homepage-nav2-smart&uuid=7d8c0f06-26d6-47c9-91d1-028fd0d47bad&step=landing_page'>
                 <Button padding={['1.3rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} borderRadius='3' fontSize='1.1rem' color='#2e475d'>Get a demo</Button>
               </Link>
-              <Link style={{ textDecoration: 'none' }} target='_blank' href='https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www.hubspot.com&hubs_signup-cta=homepage-nav2-smart&uuid=428de45f-c97a-4e0f-a3aa-9f62821b69b2&step=landing_page'>
+              <Link style={{ textDecoration: 'none' }} target='_blank' href='https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www..com&hubs_signup-cta=homepage-nav2-smart&uuid=428de45f-c97a-4e0f-a3aa-9f62821b69b2&step=landing_page'hubspot>
                 <Button padding={['1.2rem 1.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} borderRadius='3' fontSize='1.1rem' bgColor='transparent' color='whitesmoke' border='1px solid white' colorScheme='red'>Get started free</Button>
               </Link>
             </Flex>
