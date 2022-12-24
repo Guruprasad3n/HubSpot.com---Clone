@@ -6,7 +6,7 @@ import FooterAccordion from './FooterAccordion';
 
 function Footer() {
   return (
-    <Box h={['56vh', '56vh', '58vh', '87vh']} bgColor='#213343' color='white'>
+    <Box bgColor='#213343' color='white'>
       <Flex w={['80%']} display={['none', 'none', 'none', 'flex']} m='auto' direction='column'>
 
         <Flex h='58vh' alignItems='center' >
@@ -84,9 +84,9 @@ function Footer() {
           <Image w='6rem' src='https://upload.wikimedia.org/wikipedia/commons/7/71/HubSpot_Logo.png?20160320023850' />
           <Text fontSize='0.8rem' as='b' color='#b6c7d6'>Copyright @ 2022 HubSpot, Inc.</Text>
           <Flex gap='1rem'>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/legal-stuff'>Legal Stuff</Link>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/privacy-policy'>Privacy Policy</Link>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/security'>Security</Link>
+            <Link textDecoration='underline'>Legal Stuff</Link>
+            <Link textDecoration='underline'>Privacy Policy</Link>
+            <Link textDecoration='underline'>Security</Link>
           </Flex>
         </Flex>
 
@@ -111,9 +111,9 @@ function Footer() {
           <Image w='9rem' src='https://upload.wikimedia.org/wikipedia/commons/7/71/HubSpot_Logo.png?20160320023850' />
           <Text fontSize='1rem' as='b' color='#b6c7d6'>Copyright @ 2022 HubSpot, Inc.</Text>
           <Flex gap={['1rem', '2rem', '3rem', '3rem']}>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/legal-stuff'>Legal Stuff</Link>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/privacy-policy'>Privacy Policy</Link>
-            <Link textDecoration='underline' href='https://legal.hubspot.com/security'>Security</Link>
+            <Link textDecoration='underline'>Legal Stuff</Link>
+            <Link textDecoration='underline'>Privacy Policy</Link>
+            <Link textDecoration='underline'>Security</Link>
           </Flex>
         </Flex>
       </Flex>
