@@ -8,16 +8,39 @@ import Navabr1 from '../Navbar1/Navabr1'
 import Footer1 from '../footerg/Footer1'
 
 const Payment = () => {
+    const [paymentCreds, setPaymentCreds] = useState({});
     const [isLoading, setIsloading] = useState(false)
     const navigate = useNavigate()
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setPaymentCreds({
+            ...paymentCreds,
+            [name]: value,
+        })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (paymentCreds.cardnumber && paymentCreds.expirydate && paymentCreds.securitycard && paymentCreds.name) {
+            setIsloading(true)
+            setTimeout(() => {
+                setIsloading(false)
+
+                setTimeout(() => { navigate("/checkout", { replace: true }) }, 1500)
+
+            }, 2500)
+        } else {
+            alert("Please fill all the required feild")
+        }
+    }
     return (
-        <>  
+        <>
             <Navabr1 />
             <p style={{ margin: 'auto', fontSize: '32px', fontWeight: '600', color: '#33475b', marginTop: '30px', marginBottom: '15px', marginLeft: '70px' }}>Checkout</p>
             <div style={{ width: '90%', textAlign: 'center', borderTop: '1px solid rgb(203,214,226)', justifyContent: 'center', margin: 'auto' }}></div>
             <div><img className='paymentNavImg' src={paymentSlider} alt='payment' /></div>
             <div className='paymentDiv'>
-            <div className='paymentpage2div'>
+                <div className='paymentpage2div'>
                     <div className='SubscriptionDiv'>Subscription</div>
                     <div style={{ display: 'flex', padding: '16px' }}>
                         <div style={{ marginRight: '5px', marginTop: '5px' }}><Image width='34px' src='https://static.hsappstatic.net/buying-experience-components/static-1.1498/images/productIcons/Marketing.svg' alt='image' /></div>
@@ -70,29 +93,21 @@ const Payment = () => {
                             </div></div>
                         <Input
                             backgroundColor=' #f5f8fa'
-                            name='number'
+                            onChange={handleChange}
+                            name='cardnumber'
                             type='number'
                             label='Credit Card Number'
                             placeholder='0000111100001111'
                             marginBottom='20px'
                         />
                         <p style={{ marginBottom: '8px' }}>Expiration date*</p>
-                        <Input backgroundColor=' #f5f8fa' htmlSize={4} width='auto' placeholder='MM/YY' marginBottom='20px' />
+                        <Input onChange={handleChange} backgroundColor=' #f5f8fa' htmlSize={4} name="expirydate" width='auto' placeholder='MM/YY' marginBottom='20px' />
                         <p style={{ marginBottom: '8px' }}>Name on card*</p>
-                        <Input backgroundColor=' #f5f8fa' marginBottom='20px' />
+                        <Input onChange={handleChange} backgroundColor=' #f5f8fa' marginBottom='20px' name='name' />
                         <p style={{ marginBottom: '8px' }}>Security code*</p>
-                        <div style={{ display: 'flex', gap: '30px' }}><Input marginBottom='20px' backgroundColor=' #f5f8fa' htmlSize={4} width='auto' /><div style={{ display: 'flex', gap: '4px' }}><Image src='https://static.hsappstatic.net/ui-images/static-2.422/optimized/credit-card-back.svg' alt='securityImg' width='34px' /><p style={{ lineHeight: '3' }}>3 digit on back of card</p></div></div>
+                        <div style={{ display: 'flex', gap: '30px' }}><Input marginBottom='20px' onChange={handleChange} name='securitycard' backgroundColor=' #f5f8fa' htmlSize={4} width='auto' /><div style={{ display: 'flex', gap: '4px' }}><Image src='https://static.hsappstatic.net/ui-images/static-2.422/optimized/credit-card-back.svg' alt='securityImg' width='34px' /><p style={{ lineHeight: '3' }}>3 digit on back of card</p></div></div>
                     </form>
-                    <Button colorScheme='orange' onClick={() => {
-                        setIsloading(true)
-                        setTimeout(() => {
-                            setIsloading(false)
-
-                            setTimeout(() => { navigate("/checkout", { replace: true }) }, 1500)
-
-                        }, 2500)
-
-                    }}
+                    <Button colorScheme='orange' onClick={handleSubmit}
                         isLoading={isLoading}>Save & continue</Button>
                 </div>
             </div>

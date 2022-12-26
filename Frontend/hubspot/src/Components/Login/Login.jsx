@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   Flex,
-  Heading,
   Input,
   Button,
   InputGroup,
