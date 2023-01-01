@@ -1,9 +1,9 @@
-import { Box, Button, Flex, Image, Text, Link, SimpleGrid, Stack } from '@chakra-ui/react';
+import { Box, Button, Flex, Image, Text,  SimpleGrid, Stack } from '@chakra-ui/react';
 import Footer from '../Footer/Footer';
 import Footer1 from '../footerg/Footer1';
 import Navbar from '../Navbar/Navbar';
 import TopBar from '../Navbar/TopBar';
-
+import {Link} from "react-router-dom";
 
 function Home() {
   return (
@@ -28,10 +28,10 @@ function Home() {
             </Box>
 
             <Flex gap={['0.6rem', '0.6rem', '1rem', '1rem']} direction={['column', 'column', 'row', 'row']}>
-              <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'>
+              <Link style={{ textDecoration: 'none' }}  to='/signup'>
                 <Button padding={['1.3rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} borderRadius='3' fontSize='1.1rem' color='#2e475d'>Get a demo</Button>
               </Link>
-              <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'hubspot>
+              <Link style={{ textDecoration: 'none' }}  to='/signup'hubspot>
                 <Button padding={['1.2rem 1.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} borderRadius='3' fontSize='1.1rem' bgColor='transparent' color='whitesmoke' border='1px solid white' colorScheme='red'>Get started free</Button>
               </Link>
             </Flex>
@@ -60,10 +60,10 @@ function Home() {
           </Text>
 
           <Flex gap={['1rem', '2rem', '2rem', '2rem']} m='auto' direction={['column', 'row', 'row', 'row']} justifyContent='center'>
-            <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'>
+            <Link style={{ textDecoration: 'none' }}  to='/signup'>
               <Button cursor='pointer' colorScheme='red' bgColor='#ff5c35' fontSize='0.8rem' fontWeight='600' border='1px solid #ff5c35' color='white' borderRadius='0.2rem' w={['100%', '29vw', '19vw', '14vw']} h={['5vh', '4.5vh', '4.5vh', '4.5vh']} fontFamily='sans-serif'>Get free CRM</Button>
             </Link>
-            <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'>
+            <Link style={{ textDecoration: 'none' }}  to='/signup'>
               <Button cursor='pointer' border='1px solid #ff5c35' bgColor='white' color='#ff5c35' fontSize={['0.8rem', '0.8rem', '0.8rem', '0.8rem']} fontWeight='600' borderRadius='0.2rem' w={['100%', '29vw', '19vw', '14vw']} h={['5vh', '4.5vh', '4.5vh', '4.5vh']} fontFamily='sans-serif'>Demo premium CRM</Button>
             </Link>
           </Flex>
@@ -218,10 +218,10 @@ function Home() {
               <Text>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</Text>
 
               <Flex gap={['0.6rem', '1rem', '1rem', '1rem']} direction={['row', 'row', 'row', 'row']}>
-                <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'>
+                <Link style={{ textDecoration: 'none' }}  to='/signup'>
                   <Button padding={['1.3rem 1.8rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} bgColor='#ff5c35' borderRadius='3' fontSize='1.1rem' color='white'>Get a demo</Button>
                 </Link>
-                <Link style={{ textDecoration: 'none' }} target='_blank' href='/signup'>
+                <Link style={{ textDecoration: 'none' }}  to='/signup'>
                   <Button padding={['1.2rem 0.8rem', '1.8rem 2.2rem', '1.8rem 2.2rem', '1.8rem 2.2rem']} borderRadius='3' fontSize='1.1rem' color='#ff5c35' bgColor='white' border='1px solid #ff5c35'>Get started free</Button>
                 </Link>
               </Flex>
