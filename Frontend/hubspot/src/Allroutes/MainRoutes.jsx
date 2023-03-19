@@ -14,48 +14,48 @@ import { Marketing } from '../Components/Marketing/Marketing'
 
 
 const Mainroutes = () => {
-    return (
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/pricing" element={<Marketing />}></Route>
+  return (
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/pricing" element={<Marketing />}></Route>
 
-        <Route path="/resource" element={<Resources />}></Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />}></Route>
-        <Route
-          path="/cart"
-          element={
-            <RequireAuth>
-              <CartPage />
-            </RequireAuth>
-          }
-        ></Route>
-        <Route
-          path="/payment"
-          element={
-            <RequireAuth>
-              <Payment />
-            </RequireAuth>
-          }
-        ></Route>
-        <Route
-          path="/softwarepage"
-          element={
-            <RequireAuth>
-              <PricingPage />
-            </RequireAuth>
-          }
-        ></Route>
-        <Route
-          path="/checkout"
-          element={
-            <RequireAuth>
-              <CheckOut />
-            </RequireAuth>
-          }
-        ></Route>
-      </Routes>
-    );
+      <Route path="/resource" element={<Resources />}></Route>
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />}></Route>
+      <Route
+        path="/cart"
+        element={
+          <RequireAuth>
+            <CartPage />
+          </RequireAuth>
+        }
+      ></Route>
+      <Route
+        path="/payment"
+        element={
+          <RequireAuth>
+            <Payment />
+          </RequireAuth>
+        }
+      ></Route>
+      <Route
+        path="/softwarepage"
+        element={
+          <RequireAuth>
+            <PricingPage />
+          </RequireAuth>
+        }
+      ></Route>
+      <Route
+        path="/checkout"
+        element={
+          <RequireAuth>
+            <CheckOut />
+          </RequireAuth>
+        }
+      ></Route>
+    </Routes>
+  );
 }
 
 export default Mainroutes
