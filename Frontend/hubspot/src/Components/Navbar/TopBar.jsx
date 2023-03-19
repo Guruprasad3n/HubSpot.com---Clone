@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const TopBar = () => {
     return (
-        <Box w='100%' display={['none', 'none', 'none', 'inline-block']}>
+        <Box bgColor='white' w='100%' display={['none', 'none', 'none', 'inline-block']}>
             <Flex w={['100%', '100%', '100%', '80%']} h={['6vh']} m='auto' justifyContent='space-between' alignItems='center' >
                 <Flex w={{ lg: '16vw' }} justifyContent='space-between' alignItems='center'>
                     <Flex gap={['3']} justifyContent='center' alignItems='center'>
@@ -27,7 +27,7 @@ const TopBar = () => {
                     </Flex>
                 </Flex>
 
-                <Flex w={['20vw']} justifyContent='space-between' alignItems='center'>
+                <Flex w={['23vw']} justifyContent='space-between' alignItems='center'>
                     <BiSearch cursor='pointer' color='blue' />
                     <Link textDecoration='none' to='/login'>
                         <Text cursor='pointer' fontSize={['.75rem']} color='#2e475d' fontFamily='sans-serif' fontWeight='600'>Log in</Text>
