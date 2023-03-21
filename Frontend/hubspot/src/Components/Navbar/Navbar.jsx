@@ -9,9 +9,9 @@ function Navbar() {
       <Flex h={['10vh']} w={['80%']} m='auto' justifyContent='space-between' alignItems='center' display={['none', 'none', 'none', 'flex']} >
         <Flex w='33vw' justifyContent='space-between' alignItems='center'>
           <Box cursor='pointer'>
-          <Link textDecoration='none' to='/'>
-          <Image w={['6.7rem']} src='https://upload.wikimedia.org/wikipedia/commons/7/71/HubSpot_Logo.png?20160320023850' />
-          </Link>
+            <Link textDecoration='none' to='/'>
+              <Image w={['6.7rem']} src='https://upload.wikimedia.org/wikipedia/commons/7/71/HubSpot_Logo.png?20160320023850' />
+            </Link>
           </Box>
 
           {/*Need some changes here*/}
@@ -26,7 +26,7 @@ function Navbar() {
               <Link textDecoration='none' to='/resource'>
                 <Text fontSize='1.1rem' fontWeight='500' color='#2e475d'>Resources</Text>
               </Link>
-              
+
             </Flex>
           </Flex>
         </Flex>
