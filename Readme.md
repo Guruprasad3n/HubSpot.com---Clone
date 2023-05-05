@@ -2,7 +2,7 @@
 
 <h3 align="center"> <a href="https://hubspot-alpha.vercel.app/">Deploy Link</a> </h3>
 
-<p>HubSpot is a Cloud-Based CRM. HubSpot is a Software platform designed to help Company market and sell more effectively </p>
+<p>HubSpot is a Cloud-Based CRM. HubSpot is a Software platform designed to help Companies market and sell more effectively </p>
 
 * This is a Group Project 
 * We have created Clone of this Website
