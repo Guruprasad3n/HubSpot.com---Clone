@@ -1,6 +1,6 @@
 <h1 align="center">Hubspot.com</h1>
 
-<h3 align="center"> <a href="https://hubspot-alpha.vercel.app/">Deploy Link</a> </h3>
+<h3 align="center"> <a href="https://animated-narwhal-cecc2b.netlify.app">Deploy Link</a> </h3>
 
 <p>HubSpot is a Cloud-Based CRM. HubSpot is a Software platform designed to help Companies market and sell more effectively </p>
 
@@ -70,3 +70,6 @@
 <h3 align="center"> Team Members </h3>
 
 <img src="https://i.ibb.co/ScP6WGM/unit5-team-members.jpg" alt="unit5-team-members" border="0">
+
+useremail: r@gmail.com
+password: r123
